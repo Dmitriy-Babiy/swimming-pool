@@ -4,7 +4,7 @@ import { AppRoutes } from "../../Router/const"
 export default function Header() {
   return (
     <header className="header">
-      <div className="container">
+      <div className="container-main">
         <div className="header__wrapper">
           <div className="header-left">
             <Link to={AppRoutes.MAIN}>
