@@ -10,10 +10,10 @@ export default function ReviewsSlider() {
     <div className="swiper-container">
       <Swiper
         modules={[Pagination, A11y]}
-        pagination={{ type: 'bullets', clickable: true, }}
+        pagination={{ type: 'bullets', clickable: true}}
         slidesPerView={3}
         spaceBetween={110}
-        speed={300}
+        speed={150}
         loop={true}
         centeredSlides={true}
         slideToClickedSlide={true}

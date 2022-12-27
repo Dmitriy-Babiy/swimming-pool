@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { AppRoutes } from "../../Router/const"
+import {AppRoutes} from '../../Router/const'
 
 export default function Header() {
   return (

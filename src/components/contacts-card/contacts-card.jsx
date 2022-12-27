@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function ContactsCard({ title, street, metro, description}) {
+export default function ContactsCard({ title, street, metro, description }) {
   return (
     <>
       <div className='conctact-card-wrapper'>

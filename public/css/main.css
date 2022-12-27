@@ -116,13 +116,13 @@ body{
 
 /* MAIN-PAGE */
 
+/* FIRST-SCREEN */
+
 .first-screen {
   margin-top: 50px;
 }
 
-.first-screen-wrapper {
-
-}
+.first-screen-wrapper {}
 
 .first-screen__img {
   position: absolute;
@@ -147,7 +147,7 @@ body{
   padding: 40px 0px 210px 0px;
   position: relative;
   text-align: center;
-  white-space: pre-wrap;
+  white-space: pre-line;
 
   font-family: 'El Messiri';
   font-weight: 700;
@@ -177,7 +177,43 @@ body{
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
- /* REVIEWS */
+/* SERVICES */
+
+.services {
+  margin-top: 150px;
+}
+
+.services-grid__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  height: 510px;
+}
+
+.services-grid__item {
+  display: flex;
+  padding: 0px 0px 30px 40px;
+  align-items: end;
+
+  background-image: url('../img/services.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+
+  font-family: 'El Messiri';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  white-space: pre-line;
+}
+
+.services-grid__item-big {
+  background-image: url('../img/services-first.png') !important;
+  grid-row: 1/3;
+}
+
+/* REVIEWS */
 .reviews {
   margin-top: 150px;
 }
@@ -224,6 +260,7 @@ body{
 }
 
 .swiper-slide {
+  cursor: pointer;
   margin: auto;
   width: 500px;
   height: 276px;
@@ -254,8 +291,11 @@ body{
   opacity: 100%;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #018ABE !important;
+}
+
 .swiper-container {
-  margin-top: 150px;
   width: 1736px;
   margin: 0 auto;
 }
@@ -266,7 +306,7 @@ body{
 
 /* ABOUT */
 
-.about { 
+.about {
   margin-top: 150px;
 }
 
@@ -295,12 +335,12 @@ body{
 }
 
 .about__text {
-font-family: 'Proxima Nova';
-font-weight: 300;
-font-size: 16px;
-line-height: 1.4;
-color: #FFFFFF;
-white-space: pre-line
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  white-space: pre-line
 }
 
 /* PRICE */
@@ -309,7 +349,7 @@ white-space: pre-line
   margin-top: 150px;
 }
 
-.price-wrapper{
+.price-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -350,9 +390,7 @@ white-space: pre-line
   margin-right: 20px;
 }
 
-.certificate {
-
-}
+.certificate {}
 
 .certificate__img {
   border-radius: 10;
@@ -395,9 +433,9 @@ white-space: pre-line
   width: 302px;
 }
 
-.conctact-card-list{}
+.conctact-card-list {}
 
-.conctact-card__title{
+.conctact-card__title {
   margin-bottom: 20px;
   font-family: 'El Messiri';
   font-weight: 700;
@@ -410,7 +448,7 @@ white-space: pre-line
   margin-bottom: 30px;
 }
 
-.conctact-card__item{
+.conctact-card__item {
   display: flex;
   align-items: center;
   font-family: 'Proxima Nova';
@@ -435,6 +473,7 @@ white-space: pre-line
   width: 20px;
   height: 16px;
 }
+
 .conctact-card__item:nth-child(3)::before {
   content: url('/img/calendar.svg');
   width: 20px;
