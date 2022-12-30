@@ -1,11 +1,11 @@
-import ContactsCard from "../../contacts-card/contacts-card";
-import MapYandex from "../../map-yandex/map-yandex";
+import ContactsCard from "../../components/contacts-card/contacts-card";
+import MapYandex from "../../components/map-yandex/map-yandex";
 
 import React from 'react'
 
 export default function Contacts() {
   return (
-    <section className="contacts">
+    <section id="contacts" className="contacts">
       <div className="container-main">
         <div className="contacts-wrapper">
           <MapYandex />

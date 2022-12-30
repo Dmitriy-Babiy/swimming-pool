@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FirstScreen({title, subTitle}) {
   return (
-    <section className="first-screen">
+    <section id='first-screen' className="first-screen">
       <div className="container-main">
         <div className="first-screen-wrapper">
           <img className="first-screen__img" src="img/main-title-img.png" alt="" />

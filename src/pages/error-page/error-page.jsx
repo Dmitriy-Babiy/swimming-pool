@@ -1,5 +1,5 @@
 export default function ErrorPage() {
   return (
-    <div>ErrorPage</div>
+    <div>ErrorPage 404</div>
   )
 }

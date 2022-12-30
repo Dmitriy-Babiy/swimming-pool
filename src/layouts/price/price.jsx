@@ -1,8 +1,10 @@
-export default function Price({title}) {
+import Title from "../../components/title/title";
+
+export default function Prices({ title }) {
   return (
-    <section className="price">
+    <section id="price" className="prices">
       <div className="container-sub">
-        <h2 className="title">{title}</h2>
+        <Title mb={100}>{title}</Title>
         <div className="price-wrapper">
           <div className="grid">
             <div className="grid__body">

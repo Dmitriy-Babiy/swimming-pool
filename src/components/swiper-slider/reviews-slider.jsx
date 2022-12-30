@@ -1,7 +1,7 @@
 import { Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ReviewsCard from '../reviews-card/reviews-card';
-import { ReviewsData } from '../../mocks/mocks';
+import { reviewsData } from '../../mocks/mocks';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -18,7 +18,7 @@ export default function ReviewsSlider() {
         centeredSlides={true}
         slideToClickedSlide={true}
       >
-        {ReviewsData.map((card) => (
+        {reviewsData.map((card) => (
           <SwiperSlide key={card.id}>
             <ReviewsCard title={card.title} text={card.text} />
           </SwiperSlide>

@@ -1,10 +1,10 @@
-import React from 'react'
+import Title from '../../components/title/title'
 
 export default function Services({title}) {
   return (
-    <section className="services">
+    <section id='services' className="services">
       <div className="container-main">
-        <div className="title">{title}</div>
+        <Title mb={100}>{title}</Title>
         <div className="services-wrapper">
           <div className="services-grid">
             <div className="services-grid__body">

@@ -1,10 +1,11 @@
-import AboutRecord from '../../about-record/about-record'
+import AboutRecord from '../../components/about-record/about-record'
+import Title from '../../components/title/title'
 
 export default function About({ title, dataAboutRecord }) {
   return (
-    <section className="about">
+    <section id='about' className="about">
       <div className="container-sub">
-        <h2 className="title">{title}</h2>
+        <Title mb={100}>{title}</Title>
         {dataAboutRecord.map((record) => (
           <AboutRecord key={record.id} title={record.title} text={record.text} statusRevert={record.tatusRevert} />
         ))}
